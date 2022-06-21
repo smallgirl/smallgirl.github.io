@@ -3,21 +3,20 @@
 <head>
 <meta charset="utf-8">
 <script>
-function myFunction(){
-	//alert("你好，我是一个警告框！");
-	var link = 'https://iosapi.jd100.com/mobilelesson';
+function openMobilelesson(){
+    var link = 'https://iosapi.jd100.com/mobilelesson';
     window.location.href = link;
 }
-function myFunction1(){
-	//alert("你好，我是一个警告框！");
-	var link = 'iosapi.jd100.com/jd100';
+function openJd100(){
+    var link = 'https://iosapi.jd100.com/jd100';
     window.location.href = link;
 }	
 </script>
 </head>
 <body>
 
-<input type="button" onclick="myFunction()" value="打开简单课堂1" />
-<input type="button" onclick="myFunction1()" value="打开简单一百" />
+<input type="button" onclick="openMobilelesson()" value="打开简单课堂" />
+<br/>
+<input type="button" onclick="openJd100()" value="打开简单一百" />
 </body>
 </html>
