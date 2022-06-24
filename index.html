@@ -17,7 +17,11 @@ function openJdl(){
 }
 function jsLoadSuccess(){
     Android.loadSuccess();
-}    
+}
+function androidReady(){
+    var json = {"action":"ready"};
+    Android.goApp(JSON.stringify(json));
+}  
 </script>
 </head>
 <body>
@@ -32,6 +36,9 @@ function jsLoadSuccess(){
 <br/>
 <br/>
 <button type="button" onclick="jsLoadSuccess()">Android加载成功</button>
+<br/>
+<br/>
+<button type="button" onclick="androidReady()">AndroidReady</button>
 <br/>
 <br/>
 <a href="http://www.w3school.com.cn">W3School</a>   
