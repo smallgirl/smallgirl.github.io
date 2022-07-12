@@ -18,9 +18,11 @@ function openJdl(){
 function jsLoadSuccess(){
     android.loadSuccess();
 }
-function androidReady(){
-   
-}
+function getCookie(cname)
+{
+  var cookie = document.cookie;
+  alert(cookie);
+}    
 setTimeout(function(){
     var json = {"action":"documentReady"};
     android.goApp(JSON.stringify(json));
@@ -36,6 +38,9 @@ setTimeout(function(){
 <br/>
 <br/>
 <button type="button" onclick="openJdl()">打开iOS简单乐</button>
+<br/>
+<br/>
+<button type="button" onclick="getCookie()">getCookie</button>
 <br/>
 <br/>
 <a href="http://www.w3school.com.cn">W3School</a>   
