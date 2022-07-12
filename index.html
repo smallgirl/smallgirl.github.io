@@ -19,26 +19,23 @@ function jsLoadSuccess(){
     android.loadSuccess();
 }
 function androidReady(){
+   
+}
+setTimeout(function(){
     var json = {"action":"documentReady"};
     android.goApp(JSON.stringify(json));
-}  
+},3000);   
 </script>
 </head>
 <body>
 
-<button type="button" onclick="openMobilelesson()"/>打开简单课堂</button>
+<button type="button" onclick="openMobilelesson()"/>打开iOS简单课堂</button>
 <br/>
 <br/>
-<button type="button" onclick="openJd100()">打开简单一百</button>
+<button type="button" onclick="openJd100()">打开iOS简单一百</button>
 <br/>
 <br/>
-<button type="button" onclick="openJdl()">打开简单乐</button>
-<br/>
-<br/>
-<button type="button" onclick="jsLoadSuccess()">Android加载成功</button>
-<br/>
-<br/>
-<button type="button" onclick="androidReady()">AndroiddocumentReady</button>
+<button type="button" onclick="openJdl()">打开iOS简单乐</button>
 <br/>
 <br/>
 <a href="http://www.w3school.com.cn">W3School</a>   
